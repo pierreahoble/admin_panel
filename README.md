@@ -75,4 +75,4 @@ Log in to the application, click on login to your right at the top corner, Or on
 # Step 15
 To log in use as email address `admin@admin.com` and password `password`
 
-## Thank you peace!!!
+## thank you peace!!!
