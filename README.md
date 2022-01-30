@@ -1,67 +1,78 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Step 1
+To start the clone project on github on the [link] (https://github.com/pierreahoble/admin_panel.git)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+# Step 2
+Also make sure you have composer installed Also make sure you have composer php dependency on your environment, You could install it via this [link] (https://getcomposer.org/)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Step 3
+After cloning the project and downloading you need to install composer ,in the root of the project directory. Make sure to open the project in a terminal and run the following command
+`composer update or composer install`
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Step 4
+For laravel authentication to work perfectly, also install node modules dependencies with this command line in the root of project directory `npm install` Also make sure you have installed. Also make sure you have npm on your environment.
+You could install it via this [link] (https://nodejs.org)
 
-## Learning Laravel
+# Step 5
+You must also create an environment file at the root of the project. Name the file this way
+`.env`
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# Step 6
+In the .env file, paste this,
+at the root of the project you will find an `.env.example` file,
+copy the information from this file and paste it into the `.env` file
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+# Step 7
+After creating the .env file and pasting the information above, type this command
+`php artisan key:generate`
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+# Step 8 
+You had to modify the env file but first create your database
+If you had wamp server or lamp server or download on this [link] (https://www.wampserver.com/en/)
+After installing wamp server ,start your server
+Connect to your database server and create your database
 
-### Premium Partners
+# Step 9
+Let's configure our `.env` file
+In your .env file at line 14 to line 16, you will find
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
+```
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+```
+At level At line 14 put the name of your database
+At level At line 15 put username of your database
+At level At line 16 put database user password
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Step 10 
+Create the tables in your database
+Make sure you are in the root of the project directory, open your terminal or command prompt. Type this command to create the project or migration tables
+`php artisan migrate`
 
-## Code of Conduct
+# Step 11
+Fill your database with fictitious information
+Always make sure you are at the root of the project in your terminal type the following command to fill your database with information from a laravel library
+`php artisan db:seed --class=DatabaseSeeder`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Step 12 
+In your terminal always type the command `php artisan serve` to start the laravel server
 
-## Security Vulnerabilities
+# Step 13
+Your server will be started on the address localhost::port which will be displayed in your terminal
+Or open your browser and type in your browser localhost::listening port of your server
+After that you should have a homepage
+![Home page](home_panel.png "Home page")
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Step 14
+Log in to the application, click on login to your right at the top corner, Or on the login button in the middle of the screen
 
-## License
+![Login page](login.png "Login page")
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# admin_panel
+# Step 15
+To log in use as email address `admin`@admin.com and password `password`
+
+## thank you peace!!!
