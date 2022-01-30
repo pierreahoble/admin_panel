@@ -73,6 +73,6 @@ Log in to the application, click on login to your right at the top corner, Or on
 ![Login page](login.png "Login page")
 
 # Step 15
-To log in use as email address `admin`@admin.com and password `password`
+To log in use as email address `admin@admin.com` and password `password`
 
-## thank you peace!!!
+## Thank you peace!!!
