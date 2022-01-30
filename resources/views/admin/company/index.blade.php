@@ -33,7 +33,7 @@
                     @foreach ($companies as $company)
                     <tr>
                         <td>
-                            <img src="{{ $company->logo }}" alt="" style="width: 10%; border-radius: 15%">
+                            <img src="{{ $company->logo }}" alt="" style="width: 50%; border-radius: 15%">
                         </td>
                         <td>{{ $company->name }}</td>
                         <td>{{ $company->email }}k</td>
@@ -61,6 +61,24 @@
     </div>
 </div>
 
+
+{{-- <select class="form-control" name="zone_id" id="zone_id" required>
+    @foreach($zones as $zone)
+    <option value="{{$zone->id}}"
+
+        @if($zone->id==old('zone_id')) selected="" 
+        @else
+            @isset($item)
+            @if($zone->id==$item->zone_id) selected="" @endif
+            @endif
+        @endif
+
+        >{{$zone->nom ?? '-'}} <span style="float:right">[{{$zone->adresse}}]</span>
+
+        
+    </option>
+    @endforeach
+</select> --}}
 
 
 

@@ -1,3 +1,9 @@
+## **Prerequisites**
+To be able to run the project make sure you have a version of php greater than or equal to 7 All commands
+Make sure you have installed node js, the latest version of course
+That will be executed here in this manual must be executed in the root of the project
+
+
 # Step 1
 To start the clone project on github on the [link] (https://github.com/pierreahoble/admin_panel.git)
 
@@ -75,4 +81,4 @@ Log in to the application, click on login to your right at the top corner, Or on
 # Step 15
 To log in use as email address `admin@admin.com` and password `password`
 
-## thank you peace!!!
+## Thank you peace!!!
