@@ -26,7 +26,7 @@ copy the information from this file and paste it into the `.env` file
 
 # Step 7
 After creating the .env file and pasting the information above, type this command
-`php artisan key:generate`
+`php artisan key:generate`, Make sure you are still in the root of the project
 
 # Step 8 
 You had to modify the env file but first create your database
@@ -75,4 +75,4 @@ Log in to the application, click on login to your right at the top corner, Or on
 # Step 15
 To log in use as email address `admin`@admin.com and password `password`
 
-## thank you peace!!!
+## Thank you peace!!!
